@@ -1,22 +1,19 @@
 @tool
 extends EditorPlugin
 
+var plugin_type : String = "GlitchIntroNode"
+var plugin_base : String = "Node2D"
+var plugin_script : Resource = Resource.new()
+var plugin_icon : Resource = preload("res://addons/glitch_intro/assets/glitch_icon.png")
 
 func _enable_plugin() -> void:
-	# Add autoloads here.
 	pass
-
 
 func _disable_plugin() -> void:
-	# Remove autoloads here.
 	pass
-
 
 func _enter_tree() -> void:
-	# Initialization of the plugin goes here.
-	pass
-
+	add_custom_type(plugin_type, plugin_base, plugin_script, plugin_icon)
 
 func _exit_tree() -> void:
-	# Clean-up of the plugin goes here.
-	pass
+	remove_custom_type(plugin_type)
