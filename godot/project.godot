@@ -14,7 +14,6 @@ config/name="Godot Glitch Intro"
 run/main_scene="uid://dmxlrsldun5p6"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 boot_splash/bg_color=Color(0.015686275, 0.015686275, 0.015686275, 1)
-config/icon="res://icon.svg"
 
 [display]
 
