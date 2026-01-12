@@ -21,6 +21,10 @@ config/icon="res://icon.svg"
 window/size/mode=3
 window/stretch/mode="canvas_items"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/glitch_intro/plugin.cfg")
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"

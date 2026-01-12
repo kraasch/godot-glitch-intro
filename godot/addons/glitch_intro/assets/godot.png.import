@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddjyrlsjrs7i3"
-path="res://.godot/imported/glitch_icon.png-5a18b77a73378596c6850012c61fd16c.ctex"
+uid="uid://de7xdj6w8kfi6"
+path="res://.godot/imported/godot.png-1ca73720bb8cbad1418af30666953149.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/glitch-intro/assets/glitch_icon.png"
-dest_files=["res://.godot/imported/glitch_icon.png-5a18b77a73378596c6850012c61fd16c.ctex"]
+source_file="res://addons/glitch_intro/assets/godot.png"
+dest_files=["res://.godot/imported/godot.png-1ca73720bb8cbad1418af30666953149.ctex"]
 
 [params]
 

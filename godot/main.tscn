@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://dmxlrsldun5p6"]
 
 [ext_resource type="Script" uid="uid://bgwvwbmt4ctmi" path="res://main.gd" id="1_ig7tw"]
-[ext_resource type="Shader" uid="uid://blhwmt8x68rou" path="res://addons/glitch-intro/code/main.gdshader" id="2_0xm2m"]
-[ext_resource type="Texture2D" uid="uid://de7xdj6w8kfi6" path="res://addons/glitch-intro/assets/godot.png" id="2_lquwl"]
-[ext_resource type="AudioStream" uid="uid://d2aq3r67dhhcn" path="res://addons/glitch-intro/assets/sound_tv.mp3" id="3_1bvp3"]
-[ext_resource type="AudioStream" uid="uid://b34v6i2rdnh7t" path="res://addons/glitch-intro/assets/sound_radio.mp3" id="4_lquwl"]
+[ext_resource type="Shader" uid="uid://blhwmt8x68rou" path="res://addons/glitch_intro/code/main.gdshader" id="2_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://de7xdj6w8kfi6" path="res://addons/glitch_intro/assets/godot.png" id="2_lquwl"]
+[ext_resource type="AudioStream" uid="uid://d2aq3r67dhhcn" path="res://addons/glitch_intro/assets/sound_tv.mp3" id="3_1bvp3"]
+[ext_resource type="AudioStream" uid="uid://b34v6i2rdnh7t" path="res://addons/glitch_intro/assets/sound_radio.mp3" id="4_lquwl"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_h2yge"]
 shader = ExtResource("2_0xm2m")
