@@ -16,9 +16,10 @@ func setup_timer(time : float, f : Callable) -> void:
 
 func _ready() -> void:
 	# wait 2 sec.
-	var nothing = func () -> void:
-		pass
-	setup_timer(global_wait + 2.0, nothing)
+	var glow = func () -> void:
+		var tween : Tween = get_tree().create_tween()
+		tween.tween_property(%image, "modulate", Color(0.5, 0.8, 1.0, 1.0), 0.5)
+	setup_timer(global_wait + 2.0, glow)
 	# play radio sound.
 	var radio = func () -> void:
 		%radio_player.play()
