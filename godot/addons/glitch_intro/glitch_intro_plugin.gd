@@ -3,7 +3,7 @@ extends EditorPlugin
 
 var plugin_type : String = "GlitchIntroNode"
 var plugin_base : String = "Node2D"
-var plugin_script : Resource = Resource.new()
+var plugin_script : Resource = preload("res://addons/glitch_intro/code/main.gd")
 var plugin_icon : Resource = preload("res://addons/glitch_intro/assets/glitch_icon.png")
 
 func _enable_plugin() -> void:
