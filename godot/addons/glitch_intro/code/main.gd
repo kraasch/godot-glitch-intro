@@ -1,6 +1,6 @@
 extends Control
 
-const global_wait : float = 0.0
+const global_wait : float = 2.0
 
 var timers : Array[Timer] = []
 var has_played : bool = false
@@ -19,7 +19,7 @@ func _ready() -> void:
 	var glow = func () -> void:
 		var tween : Tween = get_tree().create_tween()
 		tween.tween_property(%image, "modulate", Color(0.5, 0.8, 1.0, 1.0), 0.5)
-	setup_timer(global_wait + 2.0, glow)
+	setup_timer(global_wait + 1.0, glow)
 	# play radio sound.
 	var radio = func () -> void:
 		%radio_player.play()
