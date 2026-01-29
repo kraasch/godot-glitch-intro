@@ -7,12 +7,88 @@ used resources:
   - radio noise: https://freesound.org/people/ERH/sounds/30331/ -- ERH, February 2nd, 2007
   - glitch shader effect: https://godotshaders.com/shader/glitch-effect-shader/ -- arlez80, March 15, 2021
 
-info:
-
-  - editor icons: https://github.com/godotengine/godot/tree/master/editor/icons
+## about godot plugins
 
 guides:
 
+  - editor icons: https://github.com/godotengine/godot/tree/master/editor/icons
   - how to submit plugins: https://docs.godotengine.org/en/latest/community/asset_library/submitting_to_assetlib.html
   - making plugins: https://docs.godotengine.org/en/stable/tutorials/plugins/editor/making_plugins.html
+  - godot asset library public review queue: https://godotengine.org/asset-library/asset/edit?max_results=500&page=0&asset=-1
+
+### checklist
+
+must:
+
+  - [ ] must work.
+  - [ ] has `.gitignore` (see [example](https://raw.githubusercontent.com/aaronfranke/gitignore/godot/Godot.gitignore)).
+  - [ ] no submodules.
+  - [ ] license file.
+    - [ ] repo license matches the one in the asset library.
+    - [ ] named `LICENSE` or `LICENSE.md`.
+    - [ ] contains: license text, copy right statement, year, copyright holder.
+  - [ ] proper English (name and description).
+  - [ ] icon has direct link ("raw.githubusercontent.com" not "github.com").
+
+can:
+
+  - [ ] have files within `<git-root>/addons/asset_name/`.
+  - [ ] fix or suppress all script warnings.
+  - [ ] use gdscript style guide (see [web](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_styleguide.html#doc-gdscript-styleguide)).
+  - [ ] screenshots to subfolder.
+  - [ ] screenshot subfolder has `.gdignore`
+  - [ ] add `.gitattributes` for excluding files and directories (with `export-ignore`)
+  - [ ] create copy of LICENSE and README in `<git-root>/addons/asset_name/`.
+  - [ ] host addon on Github.
+
+submission data:
+
+  - [ ] asset name.
+    - [ ] unique.
+    - [ ] descriptive.
+  - [ ] category: addon (= in-editor) or project (= in-project-manager, meaning template, demo, project).
+  - [ ] godot version.
+  - [ ] asset version number.
+  - [ ] repo host (github, gitlab, bitbucket, codeberg).
+  - [ ] repo url: `https://github.com/<user>/<project>`.
+  - [ ] issue url: `https://github.com/<user>/<project>/issues`.
+  - [ ] download git commit hash.
+  - [ ] url to asset icon and assetlib thumbnail.
+    - [ ] PNG or JPG.
+    - [ ] 1:1 ratio.
+    - [ ] minimum resolution of 128x128.
+    - [ ] url format: `https://raw.githubusercontent.com/<user>/<project>/<branch>/<filename>.png`
+  - [ ] license.
+  - [ ] description.
+  - [ ] videos (type, image or youtube url, thumbnail url).
+
+#### example files
+
+example gitignore:
+
+```gitignore
+# Godot 4+ specific ignores
+.godot/
+# Godot-specific ignores
+.import/
+export.cfg
+export_presets.cfg
+# Imported translations (automatically generated from CSV files)
+*.translation
+# Mono-specific ignores
+.mono/
+data_*/
+mono_crash.*.json
+```
+
+example gitattributes:
+
+```gitattributes
+# Normalize line endings for all files that Git considers text files.
+* text=auto eol=lf
+# Only include the addons folder when downloading from the Asset Library.
+/**        export-ignore
+/addons    !export-ignore
+/addons/** !export-ignore
+```
 
