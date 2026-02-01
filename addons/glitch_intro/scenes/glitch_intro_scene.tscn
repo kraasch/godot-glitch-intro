@@ -1,0 +1,51 @@
+[gd_scene load_steps=7 format=3 uid="uid://deew3o80hxekw"]
+
+[ext_resource type="Texture2D" uid="uid://de7xdj6w8kfi6" path="res://addons/glitch_intro/assets/godot.png" id="1_5gwdr"]
+[ext_resource type="Script" uid="uid://dnem46isrcih8" path="res://addons/glitch_intro/scenes/glitch_intro_scene.gd" id="1_wxhkr"]
+[ext_resource type="Shader" uid="uid://blhwmt8x68rou" path="res://addons/glitch_intro/code/main.gdshader" id="2_wxhkr"]
+[ext_resource type="AudioStream" uid="uid://d2aq3r67dhhcn" path="res://addons/glitch_intro/assets/sound_tv.mp3" id="3_3d03e"]
+[ext_resource type="AudioStream" uid="uid://b34v6i2rdnh7t" path="res://addons/glitch_intro/assets/sound_radio.mp3" id="4_8v5y1"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_h2yge"]
+shader = ExtResource("2_wxhkr")
+shader_parameter/shake_power = 0.03
+shader_parameter/shake_rate = 0.2
+shader_parameter/shake_speed = 5.0
+shader_parameter/shake_block_size = 30.5
+shader_parameter/shake_color_rate = 0.01
+
+[node name="GlitchScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wxhkr")
+
+[node name="image" type="TextureRect" parent="."]
+unique_name_in_owner = true
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_5gwdr")
+
+[node name="overlay" type="ColorRect" parent="image"]
+unique_name_in_owner = true
+visible = false
+material = SubResource("ShaderMaterial_h2yge")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="tv_player" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("3_3d03e")
+
+[node name="radio_player" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("4_8v5y1")
