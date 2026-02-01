@@ -20,7 +20,7 @@ guides:
 
 must:
 
-  - [X] must work.
+  - [!] must work.
   - [X] has `.gitignore` (see [example](https://raw.githubusercontent.com/aaronfranke/gitignore/godot/Godot.gitignore)).
   - [X] no submodules.
   - [X] license file.
@@ -33,7 +33,7 @@ must:
 can:
 
   - [X] have files within `<git-root>/addons/asset_name/`.
-  - [ ] fix or suppress all script warnings.
+  - [!] fix or suppress all script warnings.
   - [/] use gdscript style guide (see [web](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_styleguide.html#doc-gdscript-styleguide)).
   - [X] screenshots.
     - [X] add screenshots to subfolder.
@@ -55,7 +55,7 @@ submission data:
   - [X] repo host (github, gitlab, bitbucket, codeberg).
   - [X] repo url: `https://github.com/<user>/<project>`.
   - [X] issue url: `https://github.com/<user>/<project>/issues`.
-  - [ ] download git commit hash.
+  - [!] download hash (git commit hash).
   - [X] url to asset icon and assetlib thumbnail.
     - [X] PNG or JPG.
     - [X] 1:1 ratio.
