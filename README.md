@@ -46,7 +46,7 @@ used resources:
   - radio noise: https://freesound.org/people/ERH/sounds/30331/ -- ERH, February 2nd, 2007
   - glitch shader effect: https://godotshaders.com/shader/glitch-effect-shader/ -- arlez80, March 15, 2021
 
-## misc info about godot plugins
+## misc info on godot plugins
 
 guides:
 
