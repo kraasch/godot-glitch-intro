@@ -2,10 +2,41 @@
 # godot custom intro
 
  A lean glitch intro node plugin for Godot.
+ 
+  - AssetLib: [Godot Glitch Intro (#4667)](https://godotengine.org/asset-library/asset/4667)
+  - Github: [github.com/kraasch/godot-glitch-intro](https://github.com/kraasch/godot-glitch-intro)
 
 ## demo image
 
 ![demo_img_01](./info/screenshots/shot.png)
+
+## demo code
+
+A little demo scene is in the `./examples/` folder.
+
+After downloading the plugin with the AssetLib tab or manually
+and after enabling the plugin under `Project>Project Settings>Plugins`
+the node `GlitchIntro` will be available when adding a new node with the
+new node dialog (e.g. after having the Scene tab open and pressing **ctrl+a**).
+
+For invoking the plugin call the `play()` function and for loading the next
+scene connect to the `intro_over` signal, as both shown below.
+
+```gdscript
+extends Control
+
+@onready var glitch: GlitchIntro = %glitch
+
+var menu_scene : PackedScene = preload("res://menu.tscn")
+
+func load_menu() -> void:
+	get_tree().change_scene_to_packed(menu_scene)
+
+func _on_button_pressed() -> void:
+	glitch.intro_over.connect(load_menu)
+	glitch.play()
+```
+
 
 ## credits
 
