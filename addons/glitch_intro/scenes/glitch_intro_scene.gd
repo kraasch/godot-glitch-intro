@@ -30,6 +30,19 @@ var __timers : Array[Timer] = []
 var __was_started : bool = false
 
 #################################
+### INTERNAL FUNCTIONS ##########
+#################################
+
+func _ready() -> void:
+	replay()
+
+func _process(delta: float) -> void:
+	if not __was_started:
+		for t in __timers:
+			t.start()
+		__was_started = true
+
+#################################
 ### PUBLIC FUNCTIONS ############
 #################################
 
@@ -38,7 +51,7 @@ func replay() -> void:
 	#if is_inside_tree():
 	#if is_part_of_edited_scene():
 	__was_started = false
-	_get_ready()
+	__get_ready()
 
 #################################
 ### PRIVATE FUNCTIONS ###########
@@ -62,14 +75,7 @@ func __turn_off() -> void:
 	# emit that intro is over.
 	intro_over.emit()
 
-#################################
-### INTERNAL FUNCTIONS ##########
-#################################
-
-func _ready() -> void:
-	replay()
-
-func _get_ready() -> void:
+func __get_ready() -> void:
 	# initial wait.
 	var glow = func () -> void:
 		var tween : Tween = get_tree().create_tween()
@@ -92,9 +98,3 @@ func _get_ready() -> void:
 		image.modulate = Color()
 	__setup_timer(global_wait + 2.75, f_darken)
 	__setup_timer(global_wait + 2.85, __turn_off)
-
-func _process(delta: float) -> void:
-	if not __was_started:
-		for t in __timers:
-			t.start()
-		__was_started = true

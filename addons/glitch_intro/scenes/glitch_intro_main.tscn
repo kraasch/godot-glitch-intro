@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://dmxlrsldun5p6"]
+[gd_scene format=3 uid="uid://dmxlrsldun5p6"]
 
 [ext_resource type="Script" uid="uid://bgwvwbmt4ctmi" path="res://addons/glitch_intro/code/main.gd" id="1_iq8a5"]
 
-[node name="GlitchIntro" type="Control"]
+[node name="GlitchIntro" type="Control" unique_id=616540397]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
