@@ -12,7 +12,7 @@
 
 ## demo code
 
-A little demo scene is in the `./examples/` folder.
+A little demo scene can be found in the `./examples/` sub-folder.
 
 After downloading the plugin with the AssetLib tab or manually
 and after enabling the plugin under `Project>Project Settings>Plugins`
