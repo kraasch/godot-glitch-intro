@@ -1,13 +1,21 @@
 
 # godot custom intro
 
+ A lean glitch intro node plugin for Godot.
+
+## demo image
+
+![demo_img_01](./info/screenshots/shot.png)
+
+## credits
+
 used resources:
 
   - tv noise: https://freesound.org/people/AItF4/sounds/761332/ -- AItF4, October 24th, 2024
   - radio noise: https://freesound.org/people/ERH/sounds/30331/ -- ERH, February 2nd, 2007
   - glitch shader effect: https://godotshaders.com/shader/glitch-effect-shader/ -- arlez80, March 15, 2021
 
-## about godot plugins
+## misc info about godot plugins
 
 guides:
 
