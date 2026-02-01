@@ -42,14 +42,14 @@ can:
 
   - [X] have files within `<git-root>/addons/asset_name/`.
   - [X] (!!!) fix or suppress all script warnings.
-  - [O] use gdscript style guide (see [web](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_styleguide.html#doc-gdscript-styleguide)).
+  - [ ] use gdscript style guide (see [web](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_styleguide.html#doc-gdscript-styleguide)).
   - [X] screenshots.
     - [X] add screenshots to subfolder.
     - [X] screenshot subfolder has `.gdignore`
   - [X] add `.gitattributes` for excluding files and directories (with `export-ignore`)
   - [X] create copy of LICENSE and README in `<git-root>/addons/asset_name/`.
     - [X] LICENSE
-    - [O] README
+    - [ ] README
   - [X] host addon on Github.
 
 submission data:
@@ -72,7 +72,7 @@ submission data:
       - [X] https://raw.githubusercontent.com/kraasch/godot-glitch-intro/main/info/icon/glitch_icon.png
   - [X] license.
   - [X] description.
-  - [O] videos (type, image or youtube url, thumbnail url).
+  - [ ] videos (type, image or youtube url, thumbnail url).
 
 #### example files
 
