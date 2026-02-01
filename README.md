@@ -20,7 +20,7 @@ guides:
 
 must:
 
-  - [ ] must work.
+  - [X] must work.
   - [X] has `.gitignore` (see [example](https://raw.githubusercontent.com/aaronfranke/gitignore/godot/Godot.gitignore)).
   - [X] no submodules.
   - [X] license file.
