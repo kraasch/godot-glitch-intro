@@ -13,6 +13,9 @@ signal intro_over
 ### CONSTANTS ###################
 #################################
 
+## Only used for debugging, should always be false.
+const DEBUG : bool = false
+
 ## The initial wait time for the animations to play.
 const global_wait : float = 2.0
 
@@ -45,6 +48,11 @@ var __was_started : bool = false
 #################################
 ### INTERNAL FUNCTIONS ##########
 #################################
+
+func _ready() -> void:
+	if DEBUG:
+		play()
+	pass
 
 ## The process function.
 func _process(_delta: float) -> void:
