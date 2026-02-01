@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://liib202gyo7w"]
+
+[ext_resource type="Script" uid="uid://bg2rc05qc7om4" path="res://demo.gd" id="1_5hfv0"]
+[ext_resource type="Script" uid="uid://bgwvwbmt4ctmi" path="res://addons/glitch_intro/code/main.gd" id="2_0bhed"]
+
+[node name="demo" type="Control" unique_id=826741309]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5hfv0")
+
+[node name="glitch" type="Control" parent="." unique_id=339825812]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_0bhed")
+metadata/_custom_type_script = "uid://bgwvwbmt4ctmi"
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=505041952]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="button" type="Button" parent="CenterContainer" unique_id=1335821172]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 42
+text = "START INTRO"
+
+[connection signal="pressed" from="CenterContainer/button" to="." method="_on_button_pressed"]
