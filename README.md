@@ -1,16 +1,17 @@
 
-# godot custom intro
+# glitch intro
 
  A lean glitch intro node plugin for Godot.
  
   - AssetLib: [Godot Glitch Intro (#4667)](https://godotengine.org/asset-library/asset/4667)
   - Github: [github.com/kraasch/godot-glitch-intro](https://github.com/kraasch/godot-glitch-intro)
 
-## demo image
+## demo
 
-![demo_img_01](./info/screenshots/shot.png)
+<!-- ![demo_img_01](./info/screenshots/shot.png) -->
+![demo_gif_01](./info/screenshots/demo.gif)
 
-## demo code
+## code example
 
 A little demo scene can be found in the `./examples/` sub-folder.
 
@@ -36,7 +37,6 @@ func _on_button_pressed() -> void:
 	glitch.intro_over.connect(load_menu)
 	glitch.play()
 ```
-
 
 ## credits
 
@@ -73,14 +73,14 @@ can:
 
   - [X] have files within `<git-root>/addons/asset_name/`.
   - [X] (!!!) fix or suppress all script warnings.
-  - [ ] use gdscript style guide (see [web](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_styleguide.html#doc-gdscript-styleguide)).
+  - [X] use gdscript style guide (see [web](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_styleguide.html#doc-gdscript-styleguide)).
   - [X] screenshots.
     - [X] add screenshots to subfolder.
     - [X] screenshot subfolder has `.gdignore`
   - [X] add `.gitattributes` for excluding files and directories (with `export-ignore`)
   - [X] create copy of LICENSE and README in `<git-root>/addons/asset_name/`.
     - [X] LICENSE
-    - [ ] README
+    - [X] README
   - [X] host addon on Github.
 
 submission data:
@@ -103,9 +103,9 @@ submission data:
       - [X] https://raw.githubusercontent.com/kraasch/godot-glitch-intro/main/info/icon/glitch_icon.png
   - [X] license.
   - [X] description.
-  - [ ] videos (type, image or youtube url, thumbnail url).
+  - [X] videos (type, image or youtube url, thumbnail url).
 
-#### example files
+#### default files
 
 example gitignore:
 
