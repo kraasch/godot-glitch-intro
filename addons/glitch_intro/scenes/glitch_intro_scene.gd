@@ -14,7 +14,7 @@ signal intro_over
 #################################
 
 ## Only used for debugging, should always be false.
-const DEBUG : bool = true
+const DEBUG : bool = false
 
 ## The initial wait time for the animations to play.
 const global_wait : float = 2.0
