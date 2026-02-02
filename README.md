@@ -40,11 +40,11 @@ func _on_button_pressed() -> void:
 
 ## credits
 
-used resources:
+resources used:
 
-  - tv noise: https://freesound.org/people/AItF4/sounds/761332/ -- AItF4, October 24th, 2024
-  - radio noise: https://freesound.org/people/ERH/sounds/30331/ -- ERH, February 2nd, 2007
-  - glitch shader effect: https://godotshaders.com/shader/glitch-effect-shader/ -- arlez80, March 15, 2021
+  - beep noise: https://freesound.org/people/leviclaassen/sounds/107786/ -- leviclaassen, October 31st, 2010.
+  - radio noise: https://freesound.org/people/ERH/sounds/30331/ -- ERH, February 2nd, 2007.
+  - glitch shader: https://godotshaders.com/shader/glitch-effect-shader/ -- arlez80, March 15, 2021.
 
 ## misc info on godot plugins
 

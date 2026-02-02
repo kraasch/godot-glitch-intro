@@ -14,7 +14,7 @@ signal intro_over
 #################################
 
 ## Only used for debugging, should always be false.
-const DEBUG : bool = false
+const DEBUG : bool = true
 
 ## The initial wait time for the animations to play.
 const global_wait : float = 2.0
@@ -29,8 +29,8 @@ const global_wait : float = 2.0
 ## The inner color rectangle, used to play gitch shader effect.
 @onready var overlay: ColorRect = %overlay
 
-## The inner audio stream player to play a TV noise.
-@onready var tv_player: AudioStreamPlayer = %tv_player
+## The inner audio stream player to play a beep noise.
+@onready var beep_player: AudioStreamPlayer = %beep_player
 
 ## The inner audio stream player to play a radio noise.
 @onready var radio_player: AudioStreamPlayer = %radio_player
@@ -104,7 +104,7 @@ func __turn_off() -> void:
 	# reset visuals.
 	image.modulate = Color()
 	overlay.visible = false
-	tv_player.stop()
+	beep_player.stop()
 	radio_player.stop()
 	# emit that intro is over.
 	intro_over.emit()
@@ -122,7 +122,7 @@ func __get_ready() -> void:
 	__setup_timer(global_wait + 1.0, f_radio)
 	# play tv sound.
 	var f_tv = func () -> void:
-		tv_player.play()
+		beep_player.play()
 	__setup_timer(global_wait + 2.0, f_tv)
 	# activate shader.
 	var f_shader = func () -> void:
