@@ -9,7 +9,9 @@
 ## demo
 
 <!-- ![demo_img_01](./info/screenshots/shot.png) -->
-![demo_gif_01](./info/screenshots/demo.gif)
+<p align="center">
+  <img src="./info/screenshots/demo.gif" alt="demo_gif_01" />
+</p>
 
 ## code example
 
