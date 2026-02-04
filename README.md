@@ -50,12 +50,3 @@ resources used:
   - radio noise: https://freesound.org/people/ERH/sounds/30331/ -- ERH, February 2nd, 2007.
   - glitch shader: https://godotshaders.com/shader/glitch-effect-shader/ -- arlez80, March 15, 2021.
 
-## misc info on godot plugins
-
-guides:
-
-  - editor icons: https://github.com/godotengine/godot/tree/master/editor/icons
-  - how to submit plugins: https://docs.godotengine.org/en/latest/community/asset_library/submitting_to_assetlib.html
-  - making plugins: https://docs.godotengine.org/en/stable/tutorials/plugins/editor/making_plugins.html
-  - godot asset library public review queue: https://godotengine.org/asset-library/asset/edit?max_results=500&page=0&asset=-1
-
