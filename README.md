@@ -13,6 +13,8 @@
   <img src="./addons/glitch_intro/info/screenshots/demo.gif" alt="demo_gif_01" />
 </p>
 
+Here another [demo video](https://odysee.com/godot-glitch-intro-demo:9).
+
 ## code example
 
 A little demo scene can be found in the `./addons/glitch_intro/examples/` sub-folder.
